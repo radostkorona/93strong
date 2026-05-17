@@ -570,3 +570,39 @@ body {
 
 .subtitle-save { background: #8db89a; color: white; }
 .subtitle-cancel { background: rgba(200,100,100,0.7); color: white; }
+
+/* ===== МОБИЛЕН ИЗГЛЕД ===== */
+@media (max-width: 430px) {
+  body {
+    background: none;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .app-wrapper {
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  .phone-shell {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .phone-shell::before {
+    position: fixed;
+  }
+
+  .bg-img {
+    width: 100%;
+    position: fixed;
+  }
+
+  .overlay {
+    position: fixed;
+    width: 100%;
+  }
+}
